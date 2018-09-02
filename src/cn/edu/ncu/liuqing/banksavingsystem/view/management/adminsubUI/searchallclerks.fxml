@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane prefHeight="535.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.ncu.liuqing.banksavingsystem.controllers.operation.adminsubcontroller.SearchAllClerksController">
+   <children>
+      <Label layoutX="64.0" layoutY="32.0" text="查询所有员工">
+         <font>
+            <Font name="Microsoft Sans Serif" size="35.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="213.0" layoutY="155.0" prefHeight="307.0" prefWidth="484.0">
+        <columns>
+          <TableColumn prefWidth="88.0" text="工号">
+              <cellValueFactory>
+                  <PropertyValueFactory property="number" />
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn minWidth="0.0" prefWidth="117.0" text="姓名">
+              <cellValueFactory>
+                  <PropertyValueFactory property="name" />
+              </cellValueFactory>
+          </TableColumn>
+            <TableColumn prefWidth="278.0" text="入职时间">
+                <cellValueFactory>
+                    <PropertyValueFactory property="inTime" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Button layoutX="411.0" layoutY="109.0" mnemonicParsing="false" onAction="#load" text="加载所有员工" />
+   </children>
+</AnchorPane>

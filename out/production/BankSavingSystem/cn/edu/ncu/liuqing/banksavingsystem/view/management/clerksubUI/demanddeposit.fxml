@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="931.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.ncu.liuqing.banksavingsystem.controllers.operation.clerksubcontroller.DemandDepositController">
+   <children>
+      <Label layoutX="84.0" layoutY="28.0" text="活期存款办理">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="101.0" layoutY="101.0" text="账户：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accountNo" layoutX="143.0" layoutY="99.0" prefHeight="23.0" prefWidth="212.0" />
+      <Label layoutX="101.0" layoutY="137.0" text="密码：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="143.0" layoutY="177.0" mnemonicParsing="false" onAction="#select" text="查询" />
+      <AnchorPane fx:id="anchorPane" layoutX="75.0" layoutY="233.0" prefHeight="119.0" prefWidth="308.0">
+         <children>
+            <Label layoutX="31.0" layoutY="71.0" text="余额：">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label fx:id="balance" alignment="TOP_RIGHT" layoutX="80.0" layoutY="71.0" prefHeight="15.0" prefWidth="149.0">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="244.0" layoutY="71.0" text="元">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="31.0" layoutY="29.0" text="姓名：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="name" layoutX="81.0" layoutY="29.0" prefHeight="15.0" prefWidth="85.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="474.0" layoutY="139.0" text="存入：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="money" layoutX="516.0" layoutY="137.0" />
+      <Label layoutX="687.0" layoutY="141.0" text="元" />
+      <Button layoutX="229.0" layoutY="177.0" mnemonicParsing="false" onAction="#commit" text="提交" />
+      <Button layoutX="315.0" layoutY="177.0" mnemonicParsing="false" onAction="#reset" text="重置" />
+      <PasswordField fx:id="password" layoutX="143.0" layoutY="137.0" prefHeight="23.0" prefWidth="212.0" />
+   </children>
+</AnchorPane>

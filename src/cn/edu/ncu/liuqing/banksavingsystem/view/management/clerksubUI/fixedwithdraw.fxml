@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="575.0" prefWidth="931.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.ncu.liuqing.banksavingsystem.controllers.operation.clerksubcontroller.FixedWithdrawController">
+    <children>
+        <Label layoutX="89.0" layoutY="35.0" text="定期取款办理">
+            <font>
+                <Font size="37.0" />
+            </font>
+        </Label>
+        <Label layoutX="103.0" layoutY="100.0" text="账户：">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="103.0" layoutY="134.0" text="密码：">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="172.0" layoutY="176.0" mnemonicParsing="false" onAction="#select" text="查询" />
+        <Button layoutX="675.0" layoutY="176.0" mnemonicParsing="false" onAction="#commit" text="提交" />
+        <Button layoutX="291.0" layoutY="176.0" mnemonicParsing="false" onAction="#reset" text="重置" />
+        <TextField fx:id="accountNo" layoutX="155.0" layoutY="98.0" prefHeight="23.0" prefWidth="214.0" />
+        <PasswordField fx:id="password" layoutX="155.0" layoutY="132.0" prefHeight="23.0" prefWidth="214.0" />
+        <AnchorPane fx:id="anchorPane" layoutX="75.0" layoutY="265.0" prefHeight="215.0" prefWidth="391.0" style="-fx-border-color: blue;">
+            <children>
+                <Label layoutX="33.0" layoutY="52.0" text="存款中：">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="24.0" layoutY="21.0" text="当前存款情况">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="33.0" layoutY="81.0" text="存款金额：">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="33.0" layoutY="108.0" text="到期利息：">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="33.0" layoutY="134.0" text="起息日：">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="33.0" layoutY="161.0" text="到期日：">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="33.0" layoutY="186.0" text="存期：">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="isSaving" layoutX="98.0" layoutY="52.0" prefHeight="19.0" prefWidth="99.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="deposited" layoutX="98.0" layoutY="79.0" prefHeight="24.0" prefWidth="108.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="startDay" layoutX="97.0" layoutY="134.0" prefHeight="19.0" prefWidth="144.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="endDay" layoutX="98.0" layoutY="159.0" prefHeight="24.0" prefWidth="144.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="interest" layoutX="97.0" layoutY="108.0" prefHeight="19.0" prefWidth="108.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="period" layoutX="97.0" layoutY="186.0" prefHeight="19.0" prefWidth="56.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label layoutX="484.0" layoutY="134.0" text="取款金额：">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="withdrawedMoney" layoutX="554.0" layoutY="132.0" />
+        <Label layoutX="724.0" layoutY="136.0" text="元" />
+    </children>
+</AnchorPane>

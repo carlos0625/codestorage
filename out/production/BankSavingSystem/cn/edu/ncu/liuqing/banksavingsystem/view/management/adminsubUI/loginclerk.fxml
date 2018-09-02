@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.ncu.liuqing.banksavingsystem.controllers.operation.adminsubcontroller.LoginClerkController">
+   <children>
+      <Label layoutX="64.0" layoutY="32.0" text="员工注册" textFill="#0a0a0a">
+         <font>
+            <Font name="Microsoft Sans Serif" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="410.0" layoutY="100.0" text="身份证号：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="95.0" layoutY="100.0" text="姓名：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="410.0" layoutY="181.0" text="家庭住址：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="88.0" layoutY="181.0" text="手机号：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameTextField" layoutX="144.0" layoutY="95.0" prefHeight="29.0" prefWidth="193.0" />
+      <TextField fx:id="idTextField" layoutX="488.0" layoutY="95.0" prefHeight="29.0" prefWidth="264.0" />
+      <TextField fx:id="phoneNumberTextField" layoutX="144.0" layoutY="176.0" prefHeight="29.0" prefWidth="193.0" />
+      <TextField fx:id="addressTextField" layoutX="488.0" layoutY="176.0" prefHeight="29.0" prefWidth="404.0" />
+      <Label fx:id="tips" layoutX="95.0" layoutY="326.0" prefHeight="29.0" prefWidth="726.0" text="tips" textFill="#11da1b" visible="false" AnchorPane.leftAnchor="95.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Button layoutX="144.0" layoutY="250.0" mnemonicParsing="false" onAction="#login" prefHeight="29.0" prefWidth="56.0" text="注册" />
+      <Button layoutX="252.0" layoutY="250.0" mnemonicParsing="false" onAction="#reset" prefHeight="29.0" prefWidth="56.0" text="重置" />
+   </children>
+</AnchorPane>

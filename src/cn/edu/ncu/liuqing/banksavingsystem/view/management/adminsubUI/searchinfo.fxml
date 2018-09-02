@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="467.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.ncu.liuqing.banksavingsystem.controllers.operation.adminsubcontroller.SearchInfoController">
+   <children>
+      <Label alignment="CENTER" layoutX="64.0" layoutY="32.0" text="查询员工信息">
+         <font>
+            <Font name="Microsoft Sans Serif" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="85.0" layoutY="101.0" text="工号：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idTextField" layoutX="127.0" layoutY="95.0" prefHeight="31.0" prefWidth="189.0" />
+      <Button layoutX="355.0" layoutY="99.0" mnemonicParsing="false" onAction="#search" text="查询" />
+      <AnchorPane fx:id="anchorPane" layoutX="53.0" layoutY="189.0" prefHeight="235.0" prefWidth="847.0" visible="false">
+         <children>
+            <Label alignment="CENTER" layoutX="74.0" layoutY="40.0" prefHeight="23.0" prefWidth="42.0" text="姓名：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="nameLabel" layoutX="128.0" layoutY="35.0" prefHeight="31.0" prefWidth="101.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="346.0" layoutY="42.0" text="身份证号：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="idCardLabel" layoutX="416.0" layoutY="35.0" prefHeight="31.0" prefWidth="301.0" />
+            <Label layoutX="58.0" layoutY="86.0" text="入职时间：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="inTimeLabel" layoutX="128.0" layoutY="79.0" prefHeight="31.0" prefWidth="178.0" />
+            <Label layoutX="346.0" layoutY="88.0" prefHeight="19.0" prefWidth="70.0" text="手机号码：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneNumberLabel" layoutX="416.0" layoutY="82.0" prefHeight="31.0" prefWidth="152.0" />
+            <Label alignment="CENTER" layoutX="58.0" layoutY="135.0" text="家庭住址：">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="addressLabel" layoutX="128.0" layoutY="129.0" prefHeight="31.0" prefWidth="570.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="435.0" layoutY="99.0" mnemonicParsing="false" onAction="#reset" text="重置" />
+   </children>
+</AnchorPane>

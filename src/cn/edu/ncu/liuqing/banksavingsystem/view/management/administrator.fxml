@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0"
+            fx:controller="cn.edu.ncu.liuqing.banksavingsystem.controllers.operation.AdministratorController"
+            xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="800.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to right,#00fffc,#fff600);">
+               <children>
+                  <Label alignment="CENTER" prefHeight="59.0" prefWidth="315.0" text="员工管理系统">
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <SplitPane dividerPositions="0.20617696160267113" prefHeight="708.0" prefWidth="1200.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="251.0">
+                     <children>
+                        <Button layoutX="14.0" layoutY="85.0" mnemonicParsing="false" onAction="#loginClerk" prefHeight="29.0" prefWidth="217.0" text="注册员工" />
+                        <Button layoutX="14.0" layoutY="114.0" mnemonicParsing="false" onAction="#deleteClerk" prefHeight="29.0" prefWidth="217.0" text="删除员工" />
+                        <Button layoutX="14.0" layoutY="211.0" mnemonicParsing="false" onAction="#searchInfo" prefHeight="29.0" prefWidth="217.0" text="查询员工信息" />
+                        <Button layoutX="14.0" layoutY="143.0" mnemonicParsing="false" onAction="#searchAllClerks" prefHeight="29.0" prefWidth="217.0" text="查询所有员工" />
+                        <Button layoutX="14.0" layoutY="277.0" mnemonicParsing="false" onAction="#changePassword" prefHeight="29.0" prefWidth="217.0" text="修改员工密码" />
+                        <Label alignment="CENTER" layoutX="76.0" layoutY="14.0" prefHeight="29.0" prefWidth="89.0" text="菜单">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="92.0" layoutY="55.0" text="员工管理">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="92.0" layoutY="184.0" text="信息管理">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="92.0" layoutY="250.0" text="安全隐私">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Line endX="115.0" fill="#08ee51" layoutX="120.0" layoutY="310.0" startX="-110.0" stroke="#09afe5" />
+                        <Line endX="115.0" layoutX="120.0" layoutY="14.0" startX="-110.0" stroke="#09afe5" />
+                        <Line endX="115.0" layoutX="120.0" layoutY="43.0" startX="-110.0" stroke="#09afe5" />
+                     </children>
+                  </AnchorPane>
+                  <VBox fx:id="vBox" prefHeight="700.0" prefWidth="949.0">
+                     <children>
+                        <AnchorPane prefHeight="205.0" prefWidth="948.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="45.0" layoutY="31.0" prefHeight="49.0" prefWidth="258.0" text="Welcome to use.">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

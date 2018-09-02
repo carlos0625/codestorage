@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0"
+           xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="cn.edu.ncu.liuqing.banksavingsystem.controllers.MainController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <Button layoutX="150.0" layoutY="266.0" mnemonicParsing="false" onAction="#administratorLogin" prefHeight="89.0" prefWidth="396.0" text="管理员登陆入口">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Button layoutX="671.0" layoutY="266.0" mnemonicParsing="false" onAction="#clerkLogin" prefHeight="89.0" prefWidth="396.0" text="员工登陆入口">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="292.0" layoutY="553.0" prefHeight="15.0" prefWidth="700.0" text="温馨提示：如果您是管理员，请使用管理员登陆入口；如果您是员工，请使用员工登陆入口！">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

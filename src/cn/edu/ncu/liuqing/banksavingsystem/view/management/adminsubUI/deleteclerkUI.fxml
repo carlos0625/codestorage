@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.ncu.liuqing.banksavingsystem.controllers.operation.adminsubcontroller.DeleteClerkController">
+   <children>
+      <Label alignment="CENTER" layoutX="64.0" layoutY="32.0" prefHeight="80.0" prefWidth="239.0" text="删除员工">
+         <font>
+            <Font name="Microsoft Sans Serif" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="115.0" layoutY="174.0" prefHeight="26.0" prefWidth="49.0" text="工号：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cnoTextField" layoutX="168.0" layoutY="170.0" prefHeight="34.0" prefWidth="196.0" />
+      <Button layoutX="168.0" layoutY="259.0" mnemonicParsing="false" onAction="#delete" text="删除" />
+      <Button layoutX="283.0" layoutY="259.0" mnemonicParsing="false" onAction="#reset" text="重置" />
+   </children>
+</AnchorPane>

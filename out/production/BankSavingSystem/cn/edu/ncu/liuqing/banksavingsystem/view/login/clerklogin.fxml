@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.ncu.liuqing.banksavingsystem.controllers.login.ClerkLoginController">
+    <children>
+        <AnchorPane prefHeight="800.0" prefWidth="1200.0">
+            <children>
+                <Label alignment="CENTER" layoutX="389.0" layoutY="147.0" prefHeight="72.0" prefWidth="475.0" text="员工登陆界面">
+                    <font>
+                        <Font size="45.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="474.0" layoutY="355.0" prefHeight="38.0" prefWidth="84.0" text="职工号：">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </Label>
+                <Label alignment="CENTER" layoutX="474.0" layoutY="423.0" prefHeight="38.0" prefWidth="84.0" text="密   码：">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </Label>
+                <TextField fx:id="clerkNoTextField" layoutX="574.0" layoutY="355.0" prefHeight="38.0" prefWidth="195.0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="passwordField" layoutX="574.0" layoutY="423.0" onKeyPressed="#loginEnter" prefHeight="38.0" prefWidth="195.0" />
+                <Button layoutX="695.0" layoutY="523.0" mnemonicParsing="false" onAction="#login" prefHeight="38.0" prefWidth="75.0" text="登陆">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Label fx:id="tips" alignment="CENTER" layoutX="216.0" layoutY="586.0" prefHeight="26.0" prefWidth="775.0" text="Tips:" textFill="#ee0202" visible="false">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+            <Label alignment="CENTER" layoutX="709.0" layoutY="489.0" onMouseClicked="#forgetPassword" text="忘记密码" textFill="#0707f8" underline="true" />
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

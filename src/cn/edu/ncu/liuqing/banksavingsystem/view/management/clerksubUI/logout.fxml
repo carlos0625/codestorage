@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="931.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.ncu.liuqing.banksavingsystem.controllers.operation.clerksubcontroller.LogoutController">
+   <children>
+      <Label layoutX="87.0" layoutY="26.0" prefHeight="45.0" prefWidth="100.0" text="销户">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="43.0" text="警告：销户将会删掉该账户所有的银行操作记录，请谨慎操作！" textFill="#ff0202">
+         <font>
+            <Font name="Microsoft Sans Serif" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="97.0" layoutY="101.0" text="账户：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="accountNo" layoutX="139.0" layoutY="99.0" />
+      <PasswordField fx:id="password" layoutX="139.0" layoutY="149.0" />
+      <Label layoutX="97.0" layoutY="151.0" text="密码：">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="232.0" layoutY="200.0" mnemonicParsing="false" onAction="#logout" text="确认销户" />
+   </children>
+</AnchorPane>
