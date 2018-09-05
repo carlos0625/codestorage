@@ -1,12 +1,12 @@
 package cn.edu.ncu.liuqing.banksavingsystem.dao;
 
-import cn.edu.ncu.liuqing.banksavingsystem.entities.DemandAccount;
-import cn.edu.ncu.liuqing.banksavingsystem.entities.DemandDetails;
-import cn.edu.ncu.liuqing.banksavingsystem.entities.FixedAccount;
-import cn.edu.ncu.liuqing.banksavingsystem.entities.FixedDetails;
-import cn.edu.ncu.liuqing.banksavingsystem.exception.MyException;
+        import cn.edu.ncu.liuqing.banksavingsystem.entities.DemandAccount;
+        import cn.edu.ncu.liuqing.banksavingsystem.entities.DemandDetails;
+        import cn.edu.ncu.liuqing.banksavingsystem.entities.FixedAccount;
+        import cn.edu.ncu.liuqing.banksavingsystem.entities.FixedDetails;
+        import cn.edu.ncu.liuqing.banksavingsystem.exception.MyException;
 
-import java.util.List;
+        import java.util.List;
 
 public interface ClerkDAO {
 
